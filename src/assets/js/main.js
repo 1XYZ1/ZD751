@@ -6,15 +6,15 @@
 
 "use strict";
 
-$(window).on("load", function() {
-    /*------------------
+function init_plugins() {
+    $(window).on("load", function() {
+        /*------------------
 		Preloder
 	--------------------*/
-    $(".loader").fadeOut();
-    $("#preloder").delay(400).fadeOut("slow");
-});
+        $(".loader").fadeOut();
+        $("#preloder").delay(400).fadeOut("slow");
+    });
 
-function init_plugins() {
     (function($) {
         /*------------------
 		Navigation
@@ -104,7 +104,7 @@ function init_plugins() {
             nav: true,
             dots: false,
             margin: 30,
-            autoplay: true,
+            autoplay: false,
             navText: [
                 '<i class="flaticon-left-arrow-1"></i>',
                 '<i class="flaticon-right-arrow-1"></i>',

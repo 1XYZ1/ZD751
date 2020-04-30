@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-lg-2 text-center text-lg-left">
                     <!-- logo -->
-                    <a href="./index.html" class="site-logo">
+                    <a routerLink="/home" class="site-logo">
                         <!-- <img src="img/logo.png" alt=""> -->
                         ZD75
                     </a>
@@ -34,38 +34,46 @@
             </div>
         </div>
     </div>
-    <nav class="main-navbar">
-        <div class="container">
-            <!-- menu -->
-            <ul class="main-menu">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">PS3</a></li>
-                <li>
-                    <a href="#">PS4<span class="new">New</span></a>
-                </li>
 
-                <li>
-                    <a href="#">CARDS</a>
-                    <ul class="sub-menu">
-                        <li><a href="#">Playstation</a></li>
-                        <li><a href="#">Xbox</a></li>
-                        <li><a href="#">Nintendo</a></li>
-                        <li><a href="#">Steam</a></li>
-                        <li><a href="#">Fortnite</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Pages</a>
-                    <ul class="sub-menu">
-                        <li><a href="./product.html">Product Page</a></li>
-                        <li><a href="./category.html">Category Page</a></li>
-                        <li><a href="./cart.html">Cart Page</a></li>
-                        <li><a href="./checkout.html">Checkout Page</a></li>
-                        <li><a href="./contact.html">Contact Page</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">TUTORIAL</a></li>
-            </ul>
+    <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item" routerLinkActive="active">
+                        <a class="nav-link" routerLink="/home">
+                            <i class="fa fa-home"></i> HOME
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item" routerLinkActive="active">
+                        <a class="nav-link" routerLink="/ps3">
+                            <i class="fa fa-gamepad">
+                <!-- <span class="badge badge-danger">11</span> -->
+              </i> PS3
+                        </a>
+                    </li>
+                    <li class="nav-item" routerLinkActive="active">
+                        <a class="nav-link" routerLink="/ps4">
+                            <i class="fa fa-gamepad"> </i> PS4
+                        </a>
+                    </li>
+
+                    <li class="nav-item" routerLinkActive="active">
+                        <a class="nav-link" routerLink="/cards">
+                            <i class="fa fa-playstation"> </i> TARJETAS
+                        </a>
+                    </li>
+                    <li class="nav-item" routerLinkActive="active">
+                        <a class="nav-link" routerLink="/tutorial">
+                            <i class="fa fa-youtube"> </i> TUTORIAL
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 </header>
